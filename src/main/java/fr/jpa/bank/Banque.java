@@ -19,4 +19,29 @@ public class Banque {
 
 	@OneToMany(mappedBy="banque")
 	private Set<Client> client;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNom() {
+		return nom;
+	}
+
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+
+	public Set<Client> getClient() {
+		return client;
+	}
+
+	public void setClient(Set<Client> client) {
+		this.client = client;
+	}
+	
 }
