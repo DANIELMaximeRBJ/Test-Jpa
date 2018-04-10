@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class Banque {
 	@Id
 	private Integer id;
-	@Column(name = "Nom", length = 30, nullable = false, unique = true)
+	@Column(name = "Nom", length = 30, nullable = false)
 	private  String nom;
 
 	@OneToMany(mappedBy="banque")

@@ -18,7 +18,7 @@ public class Operation {
 	@Column(name = "Montant", nullable = false)
 	private  double montant;
 	@Column(name = "MOTIF", length = 300, nullable = false)
-	private  LocalDateTime motif;
+	private  String motif;
 	
 
 	
@@ -40,10 +40,11 @@ public class Operation {
 	public void setMontant(double montant) {
 		this.montant = montant;
 	}
-	public LocalDateTime getMotif() {
+	
+	public String getMotif() {
 		return motif;
 	}
-	public void setMotif(LocalDateTime motif) {
+	public void setMotif(String motif) {
 		this.motif = motif;
 	}
 	@Override

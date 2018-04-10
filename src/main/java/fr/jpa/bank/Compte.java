@@ -53,6 +53,18 @@ public class Compte {
 	public String toString() {
 		return "Compte [id=" + id + ", codeCompte=" + codeCompte + ", solde=" + solde + "]";
 	}
+	public Set<Virement> getVirement() {
+		return virement;
+	}
+	public void setVirement(Set<Virement> virement) {
+		this.virement = virement;
+	}
+	public Set<Client> getClient() {
+		return client;
+	}
+	public void setClient(Set<Client> client) {
+		this.client = client;
+	}
 
 	
 	

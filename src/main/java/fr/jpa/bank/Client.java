@@ -38,7 +38,7 @@ public class Client {
 	private Set<Compte> compte;
 	
 	@ManyToOne
-	@JoinColumn(name="ID_CLIENT")
+	@JoinColumn(name="ID_BANQUE")
 	private Banque banque;
 	
 	@Embedded
@@ -93,6 +93,15 @@ public class Client {
 		this.compte = compte;
 	}
 
+	public Adresse getAdresse() {
+		return adresse;
+	}
+
+	public void setAdresse(Adresse adresse) {
+		this.adresse = adresse;
+	}
+
+	
 
 
 	
